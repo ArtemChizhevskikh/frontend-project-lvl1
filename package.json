@@ -1,0 +1,20 @@
+{
+  "name": "frontend-project-lvl1",
+  "version": "1.0.0",
+  "description": "Project Brain Games",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemChizhevskikh/frontend-project-lvl1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemChizhevskikh/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/ArtemChizhevskikh/frontend-project-lvl1#readme"
+}
