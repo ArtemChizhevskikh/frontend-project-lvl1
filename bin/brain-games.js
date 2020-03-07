@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import name from '../src/index.js';
+import greeting from '../src/index.js';
 
-console.log('Welcome to the Brain Games!');
-name();
+const name = greeting();
+
+export default name;
