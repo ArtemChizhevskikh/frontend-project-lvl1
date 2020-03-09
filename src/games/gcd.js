@@ -14,4 +14,3 @@ export default () => {
   const coll = { rightAnswer, question };
   return coll;
 };
-
