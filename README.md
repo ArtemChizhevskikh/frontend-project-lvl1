@@ -3,7 +3,10 @@
 
 ![Node CI](https://github.com/ArtemChizhevskikh/frontend-project-lvl1/workflows/Node%20CI/badge.svg)
 
-[![asciicast](https://asciinema.org/a/FvGSGV3khKxYpqhd1yOWBJGPJ.svg)](https://asciinema.org/a/FvGSGV3khKxYpqhd1yOWBJGPJ)
+[![asciicast](https://asciinema.org/a/Fx3dB6hSNMH2A93WSOQRNzMuW.svg)](https://asciinema.org/a/Fx3dB6hSNMH2A93WSOQRNzMuW)
 
 
 [![asciicast](https://asciinema.org/a/coQnUF4r11HRkuUA86W8ZBMAs.svg)](https://asciinema.org/a/coQnUF4r11HRkuUA86W8ZBMAs)
+
+
+[![asciicast](https://asciinema.org/a/N4iVaytBaND8JpoJeVAnQMiRP.svg)](https://asciinema.org/a/N4iVaytBaND8JpoJeVAnQMiRP)
