@@ -3,6 +3,7 @@ import evenGame from './games/even.js';
 import calcGame from './games/calc.js';
 import gcdGame from './games/gcd.js';
 import progressionGame from './games/progression.js';
+import primeGame from './games/prime.js';
 
 export default (game) => {
   console.log('Welcome to the Brain Games!');
@@ -29,6 +30,10 @@ export default (game) => {
       console.log('What number is missing in the progression?');
       gameParams = () => progressionGame();
       break;
+    case 'primeGame':
+      console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+      gameParams = () => primeGame();
+      break;
     default:
       throw new Error(`Unknown game '${game}'`);
   }
@@ -42,7 +47,7 @@ export default (game) => {
       console.log('Correct!');
       rightAnswers += 1;
     } else {
-      console.log(`"${answer}" is wrong answer ;(. Correct answer was "${coll.rightAnswer}."`);
+      console.log(`"${answer}" is wrong answer ;(. Correct answer was "${coll.rightAnswer}".`);
       console.log(`Let's try again, ${name}`);
       rightAnswers = 0;
     }
