@@ -3,12 +3,12 @@
 
 ![Node CI](https://github.com/ArtemChizhevskikh/frontend-project-lvl1/workflows/Node%20CI/badge.svg)
 
-[![asciicast](https://asciinema.org/a/Fx3dB6hSNMH2A93WSOQRNzMuW.svg)](https://asciinema.org/a/Fx3dB6hSNMH2A93WSOQRNzMuW)
+[![asciicast](https://asciinema.org/a/G9bYQQRRETjawRcFyMW8TyCaP.svg)](https://asciinema.org/a/G9bYQQRRETjawRcFyMW8TyCaP)
 
-[![asciicast](https://asciinema.org/a/coQnUF4r11HRkuUA86W8ZBMAs.svg)](https://asciinema.org/a/coQnUF4r11HRkuUA86W8ZBMAs)
+[![asciicast](https://asciinema.org/a/hR8D3LVpK9fQ1noqmYW4rkRvt.svg)](https://asciinema.org/a/hR8D3LVpK9fQ1noqmYW4rkRvt)
 
-[![asciicast](https://asciinema.org/a/Yz9Y7FTHSPwKGTwIKRoKiVG7f.svg)](https://asciinema.org/a/Yz9Y7FTHSPwKGTwIKRoKiVG7f)
+[![asciicast](https://asciinema.org/a/GxdHiO9brTnC7wkVPh5tASLKk.svg)](https://asciinema.org/a/GxdHiO9brTnC7wkVPh5tASLKk)
 
-[![asciicast](https://asciinema.org/a/zFqvwyS0Z1pXMEfNyIe2BguVH.svg)](https://asciinema.org/a/zFqvwyS0Z1pXMEfNyIe2BguVH)
+[![asciicast](https://asciinema.org/a/fhOizoq9s6FsCzeX62xTBxMnA.svg)](https://asciinema.org/a/fhOizoq9s6FsCzeX62xTBxMnA)
 
-[![asciicast](https://asciinema.org/a/Niwoi3mraFST8OCJAcClEzvJk.svg)](https://asciinema.org/a/Niwoi3mraFST8OCJAcClEzvJk)
+[![asciicast](https://asciinema.org/a/9wCqr9oOlmGQMCQsvOibFJiDn.svg)](https://asciinema.org/a/9wCqr9oOlmGQMCQsvOibFJiDn)
