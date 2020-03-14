@@ -21,7 +21,7 @@ Play few games to stretch your brain
 ```
 3. Install package:
 ```
-  $npm link
+  $make install
 ```
 4. Create global link:
 ```
