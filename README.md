@@ -13,7 +13,7 @@ Play few games to stretch your brain
 
 1. Clone repository:
 ```
-  $ git clone https://github.com/ArtemChizhevskikh/frontend-project-lvl1.git brain-games
+  $git clone https://github.com/ArtemChizhevskikh/frontend-project-lvl1.git brain-games
 ```
 2. Go into package directory:
 ```
@@ -29,3 +29,22 @@ Play few games to stretch your brain
 ```
 - - - 
 ## Games
+**Brain-even**:
+
+![Alt text](https://github.com/ArtemChizhevskikh/projectsDemo/blob/master/brainGames/brain-even.svg)
+
+**Brain-calc**:
+
+![Alt text](https://github.com/ArtemChizhevskikh/projectsDemo/blob/master/brainGames/brain-calc.svg)
+
+**Brain-gcd**:
+
+![Alt text](https://github.com/ArtemChizhevskikh/projectsDemo/blob/master/brainGames/brain-gcd.svg)
+
+**Brain-progression**:
+
+![Alt text](https://github.com/ArtemChizhevskikh/projectsDemo/blob/master/brainGames/brain-progression.svg)
+
+**Brain-prime**:
+
+![Alt text](https://github.com/ArtemChizhevskikh/projectsDemo/blob/master/brainGames/brain-prime.svg)
