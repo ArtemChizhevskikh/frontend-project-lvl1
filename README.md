@@ -16,21 +16,29 @@ Play few games to stretch your brain
   $git clone https://github.com/ArtemChizhevskikh/frontend-project-lvl1.git brain-games
 ```
 ![Alt text](https://github.com/ArtemChizhevskikh/projectsDemo/blob/master/brainGames/install1.svg)
+
+
 2. Go into package directory:
 ```
   $cd brain-games
 ```
 ![Alt text](https://github.com/ArtemChizhevskikh/projectsDemo/blob/master/brainGames/install2.svg)
+
+
 3. Install package:
 ```
   $make install
 ```
 ![Alt text](https://github.com/ArtemChizhevskikh/projectsDemo/blob/master/brainGames/install3.svg)
+
+
 4. Create global link:
 ```
   $npm link
 ```
 ![Alt text](https://github.com/ArtemChizhevskikh/projectsDemo/blob/master/brainGames/install4.svg)
+
+
 - - - 
 ## Games
 **Brain-even**:
