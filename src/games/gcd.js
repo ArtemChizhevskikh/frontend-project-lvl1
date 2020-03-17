@@ -10,7 +10,7 @@ const findGcd = (a, b) => {
 
 export default () => {
   const gameRules = 'Find the greatest common divisor of given numbers.';
-  const gameParams = () => {
+  const gcdGame = () => {
     const num1 = randomNumber(1, 100);
     const num2 = randomNumber(1, 100);
     const rightAnswer = findGcd(num1, num2).toString();
@@ -18,5 +18,5 @@ export default () => {
     const coll = { rightAnswer, question };
     return coll;
   };
-  return playGame(gameRules, gameParams);
+  return playGame(gameRules, gcdGame);
 };

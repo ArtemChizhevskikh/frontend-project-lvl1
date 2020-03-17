@@ -12,12 +12,12 @@ const isPrime = (num) => {
 
 export default () => {
   const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const gameParams = () => {
+  const primeGame = () => {
     const number = randomNumber(2, 100);
     const rightAnswer = (isPrime(number)) ? 'yes' : 'no';
     const question = number;
     const coll = { rightAnswer, question };
     return coll;
   };
-  return playGame(gameRules, gameParams);
+  return playGame(gameRules, primeGame);
 };

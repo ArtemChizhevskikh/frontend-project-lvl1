@@ -24,7 +24,7 @@ const makeQuestion = (progressionColl, missingIndex) => {
 
 export default () => {
   const gameRules = 'What number is missing in the progression?';
-  const gameParams = () => {
+  const progressionGame = () => {
     const startingNumber = randomNumber(1, 100);
     const progressionStep = (startingNumber < 70) ? randomNumber(2, 7) : -randomNumber(2, 7);
     const progression = makeProgression(startingNumber, progressionStep);
@@ -34,5 +34,5 @@ export default () => {
     const params = { rightAnswer, question };
     return params;
   };
-  return playGame(gameRules, gameParams);
+  return playGame(gameRules, progressionGame);
 };

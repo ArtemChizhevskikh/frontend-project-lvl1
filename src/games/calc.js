@@ -17,7 +17,7 @@ const randomOperation = (a, b, operator) => {
 
 export default () => {
   const gameRules = 'What is the result of the expression?';
-  const gameParams = () => {
+  const calcGame = () => {
     const num1 = randomNumber(1, 20);
     const num2 = randomNumber(1, 20);
     const randomOperator = operators[randomNumber(0, 2)];
@@ -26,5 +26,5 @@ export default () => {
     const coll = { rightAnswer, question };
     return coll;
   };
-  return playGame(gameRules, gameParams);
+  return playGame(gameRules, calcGame);
 };
