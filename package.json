@@ -18,6 +18,10 @@
     "type": "git",
     "url": "git+https://github.com/ArtemChizhevskikh/frontend-project-lvl1.git"
   },
+  "keywords": [
+    "brain-games",
+    "hexlet"
+  ],
   "author": "ArtemChizhevskikh",
   "license": "ISC",
   "bugs": {
