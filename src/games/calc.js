@@ -1,29 +1,30 @@
-import { greeting, randomNumber, playGame } from '../index.js';
+import playGame from '../index.js';
+import randomNumber from '../utils.js';
+
+const operators = ['+', '-', '*'];
+const randomOperation = (a, b, operator) => {
+  switch (operator) {
+    case '+':
+      return a + b;
+    case '-':
+      return a - b;
+    case '*':
+      return a * b;
+    default:
+      throw new Error(`Unknown operator '${operator}'`);
+  }
+};
 
 export default () => {
-  const name = greeting();
-  console.log('What is the result of the expression?');
+  const gameRules = 'What is the result of the expression?';
   const gameParams = () => {
-    const operators = ['+', '-', '*'];
-    const number1 = randomNumber(1, 20);
-    const number2 = randomNumber(1, 20);
-    const randomOperator = operators[randomNumber(1, 3) - 1];
-    const randomOperation = (num1, num2, message) => {
-      switch (message) {
-        case '+':
-          return num1 + num2;
-        case '-':
-          return num1 - num2;
-        case '*':
-          return num1 * num2;
-        default:
-          throw new Error(`Unknown operator '${message}'`);
-      }
-    };
-    const rightAnswer = `${randomOperation(number1, number2, randomOperator)}`;
-    const question = `${number1} ${randomOperator} ${number2}`;
+    const num1 = randomNumber(1, 20);
+    const num2 = randomNumber(1, 20);
+    const randomOperator = operators[randomNumber(0, 2)];
+    const rightAnswer = randomOperation(num1, num2, randomOperator).toString();
+    const question = `${num1} ${randomOperator} ${num2}`;
     const coll = { rightAnswer, question };
     return coll;
   };
-  return playGame(name, gameParams);
+  return playGame(gameRules, gameParams);
 };
