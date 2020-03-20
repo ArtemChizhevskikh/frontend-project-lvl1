@@ -1,8 +1,12 @@
 import playGame from '../index.js';
-import randomNumber from '../utils.js';
+import getRandomNumber from '../utils.js';
+
+const gameDescription = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
-const randomOperation = (a, b, operator) => {
+const numberOfOperators = operators.length;
+
+const performRandomOperation = (a, b, operator) => {
   switch (operator) {
     case '+':
       return a + b;
@@ -15,16 +19,14 @@ const randomOperation = (a, b, operator) => {
   }
 };
 
-export default () => {
-  const gameRules = 'What is the result of the expression?';
-  const calcGame = () => {
-    const num1 = randomNumber(1, 20);
-    const num2 = randomNumber(1, 20);
-    const randomOperator = operators[randomNumber(0, 2)];
-    const rightAnswer = randomOperation(num1, num2, randomOperator).toString();
-    const question = `${num1} ${randomOperator} ${num2}`;
-    const coll = { rightAnswer, question };
-    return coll;
-  };
-  return playGame(gameRules, calcGame);
+const getGameData = () => {
+  const num1 = getRandomNumber(1, 20);
+  const num2 = getRandomNumber(1, 20);
+  const randomOperator = operators[getRandomNumber(0, numberOfOperators - 1)];
+  const rightAnswer = performRandomOperation(num1, num2, randomOperator).toString();
+  const question = `${num1} ${randomOperator} ${num2}`;
+  const gameData = { rightAnswer, question };
+  return gameData;
 };
+
+export default () => playGame(gameDescription, getGameData);

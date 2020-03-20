@@ -1,38 +1,40 @@
 import playGame from '../index.js';
-import randomNumber from '../utils.js';
+import getRandomNumber from '../utils.js';
+
+const gameDescription = 'What number is missing in the progression?';
+
+const progressionLength = 10;
 
 const makeProgression = (start, step) => {
-  const coll = [start];
-  for (let i = 1; i < 10; i += 1) {
-    const nextNumber = coll[i - 1] + step;
+  const coll = [];
+  for (let i = 0; i < progressionLength; i += 1) {
+    const nextNumber = start + step * i;
     coll.push(nextNumber);
   }
   return coll;
 };
 
-const makeQuestion = (progressionColl, missingIndex) => {
+const makeQuestion = (progression, missingIndex) => {
   let result = '';
-  for (let i = 0; i < progressionColl.length; i += 1) {
+  for (let i = 0; i < progressionLength; i += 1) {
     if (i === missingIndex) {
       result += '.. ';
     } else {
-      result += `${progressionColl[i]} `;
+      result += `${progression[i]} `;
     }
   }
   return result;
 };
 
-export default () => {
-  const gameRules = 'What number is missing in the progression?';
-  const progressionGame = () => {
-    const startingNumber = randomNumber(1, 100);
-    const progressionStep = (startingNumber < 70) ? randomNumber(2, 7) : -randomNumber(2, 7);
-    const progression = makeProgression(startingNumber, progressionStep);
-    const missingPositon = randomNumber(1, 8);
-    const rightAnswer = progression[missingPositon].toString();
-    const question = makeQuestion(progression, missingPositon);
-    const params = { rightAnswer, question };
-    return params;
-  };
-  return playGame(gameRules, progressionGame);
+const getGameData = () => {
+  const startingNumber = getRandomNumber(1, 100);
+  const progressionStep = (startingNumber < 70) ? getRandomNumber(2, 7) : -getRandomNumber(2, 7);
+  const progression = makeProgression(startingNumber, progressionStep);
+  const missingPositon = getRandomNumber(0, progressionLength - 1);
+  const rightAnswer = progression[missingPositon].toString();
+  const question = makeQuestion(progression, missingPositon);
+  const gameData = { rightAnswer, question };
+  return gameData;
 };
+
+export default () => playGame(gameDescription, getGameData);
