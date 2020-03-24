@@ -14,13 +14,13 @@ const makeProgression = (start, step) => {
   return coll;
 };
 
-const makeQuestion = (progression, missingIndex) => {
+const makeQuestion = (progression, missingPositon) => {
   let result = '';
   for (let i = 0; i < progressionLength; i += 1) {
-    if (i === missingIndex) {
-      result += '.. ';
+    if (i === missingPositon) {
+      result = `${result} ..`;
     } else {
-      result += `${progression[i]} `;
+      result = `${result} ${progression[i]}`;
     }
   }
   return result;
