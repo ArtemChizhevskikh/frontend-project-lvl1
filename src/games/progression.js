@@ -18,9 +18,9 @@ const makeQuestion = (progression, missingPositon) => {
   let result = '';
   for (let i = 0; i < progressionLength; i += 1) {
     if (i === missingPositon) {
-      result = `${result} ..`;
+      result = `${result}.. `;
     } else {
-      result = `${result} ${progression[i]}`;
+      result = `${result}${progression[i]} `;
     }
   }
   return result;
